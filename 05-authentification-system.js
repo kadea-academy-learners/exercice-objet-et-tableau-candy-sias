@@ -61,5 +61,8 @@ console.log(signUp("Alice", "alice@mail.com", "1234", "1234"));
 console.log(signUp("Bob", "bob@mail.com", "abcd", "abcd"));
 console.log(login("alice@mail.com", "1234"));
 
+console.log(signUp("Candy", "candy@mail.com", "1234", "1234")); // doit renvoyer erreur
+console.log(login("candy@mail.com", "0000")); // mauvais mot de passe
+
 
 module.exports = { baseDeDonnees, signUp, login };
