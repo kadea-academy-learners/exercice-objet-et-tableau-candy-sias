@@ -12,9 +12,18 @@ La fonction doit retourner un objet contenant ces trois propriétés :
     - estConnecte (boolean)
 */
 
-function createUser() {
+function createUser(name, age, estConnecte) {
+    if (typeof name !== "string") {
+        return "Erreur. Le nom est une chaîne de caractères"
+    }
     
+    return {
+    nom: name,
+    age: age,
+    estConnecté: estConnecte 
+  };
 }
+console.log(createUser("Josias", 18, true));
 
 module.exports = {
     createUser,
